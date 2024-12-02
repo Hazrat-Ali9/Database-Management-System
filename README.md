@@ -36,3 +36,5 @@
 # select *from lesson;
 
 # 13. update lesson set name = 'ali', where id = 1,2. etc ; 
+
+# 14. delete from lesson where id = 2;
