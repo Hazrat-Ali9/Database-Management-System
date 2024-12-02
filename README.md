@@ -51,4 +51,6 @@
 
 # 17. select *from lesson ORDER By id DESC;
 
-# Multiple Condition.  
+# Multiple Condition. 
+
+# 18.  select *from lesson ORDER By id DESC, id ASC;
