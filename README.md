@@ -32,3 +32,6 @@
 # 11. select email from lesson; (see him email).
 
 # 12. update lesson set email = 'alihazrat.com', where id =1 ; ( Mail Changed ).
+
+# select *from lesson;
+
