@@ -26,3 +26,5 @@
 
 
 # 9. select * from lesson; 
+
+# 10 select * from lesson where id =1;
