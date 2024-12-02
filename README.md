@@ -17,3 +17,5 @@
 # 5. desc lesson;
 
 # 6. alter table lesson add ( Name Varchar (10), email Varchar (20));
+
+# 7. desc lesson; ( For See him)
