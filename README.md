@@ -42,3 +42,12 @@
 # Select *from lesson;
 
 # Single Condition.  
+
+# 15. select id,name from lesson id>1 and <10; 
+
+# ORDER By.
+
+# 16. select *from lesson ORDER By id ASCi,
+
+
+
