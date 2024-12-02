@@ -21,3 +21,5 @@
 # 7. desc lesson; ( For See him)
 
 # 8. insert into lesson values ( 1, 'Hazrat','CSE','hazrat@gmail.com');
+
+# insert into lesson values ( 2, 'Rahim','CSE','rahim@gmail.com');
