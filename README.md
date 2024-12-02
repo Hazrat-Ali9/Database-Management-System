@@ -27,6 +27,6 @@
 
 # 9. select * from lesson; 
 
-# 10 select * from lesson where id =1;
+# 10. select * from lesson where id =1;
 
 # 11. select email from lesson; (see him email).
