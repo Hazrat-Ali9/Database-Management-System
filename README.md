@@ -49,5 +49,5 @@
 
 # 16. select *from lesson ORDER By id ASCi,
 
-
+# 17. select *from lesson ORDER By id DESC;
 
