@@ -14,3 +14,4 @@
 
 # 4. user created.
 
+# create table lesson (id number);
