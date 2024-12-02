@@ -15,3 +15,5 @@
 # 4. create table lesson (id number);
 
 # 5. desc lesson;
+
+# 6. alter table lesson add ( Name Varchar (10), email Varchar (20));
