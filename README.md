@@ -35,3 +35,4 @@
 
 # select *from lesson;
 
+# 13. update lesson set name = 'ali', where id = 1,2. etc ; 
