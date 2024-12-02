@@ -14,4 +14,4 @@
 
 # 4. create table lesson (id number);
 
-# 5. create table lesson (id number);
+# 5. desc lesson;
