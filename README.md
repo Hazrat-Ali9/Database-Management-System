@@ -12,6 +12,6 @@
 
 # 3. create username || UserName identified by pass ; ( Both Same)
 
-# 4. user created.
+# 4. create table lesson (id number);
 
-# create table lesson (id number);
+# 5. create table lesson (id number);
