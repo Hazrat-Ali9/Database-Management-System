@@ -8,3 +8,4 @@
 
 # 1. alter session set " _Oracle_Script" = true;
 
+# 2. session altered;
