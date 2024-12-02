@@ -54,3 +54,5 @@
 # Multiple Condition. 
 
 # 18.  select *from lesson ORDER By id DESC, name ASC;
+
+# 19.  select *from lesson ORDER By name DESC, id ASC;
