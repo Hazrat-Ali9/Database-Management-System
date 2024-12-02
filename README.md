@@ -40,3 +40,5 @@
 # 14. delete from lesson where id = 2;
 
 # Select *from lesson;
+
+# Single Condition.  
