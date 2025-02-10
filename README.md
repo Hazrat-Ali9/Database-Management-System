@@ -99,25 +99,26 @@
       7698 BLAKE      MANAGER               01-MAY-81       3850         30
       7902 FORD       ANALYST          7566 03-DEC-81       3000         10
 
-# 28. DECLARE
+# 28. 
+    DECLARE
 
-# 29. EMP_NO VARCHAR(100);
+    29. EMP_NO VARCHAR(100);
 
-# 30. EMP_SAL EMPLOYEES.SAL%TYPE:=20000;
+    30. EMP_SAL EMPLOYEES.SAL%TYPE:=20000;
 
-# 31. IF EMP_SAL>20000 THEN
+    31. IF EMP_SAL>20000 THEN
 
-# 32. DBMS_OUTPUT.PUT_line('he is Rich);
+    32. DBMS_OUTPUT.PUT_line('he is Rich);
 
-# 33. else
+    33. else
+ 
+    34. DBMS_OUTPUT.PUT_line('he is poor);
 
-# 34. DBMS_OUTPUT.PUT_line('he is poor);
+    35. END IF;
 
-# 35. END IF;
+    36. END;
 
-# 36. END;
-
-# 37. /
+    37. /
 
 # 38.  DECLARE
   2  EMP_NO VARCHAR2(100);
