@@ -64,3 +64,5 @@
 # 22. DBMS_OUTPUT.PUT_LINE('HAZRAT ALI');
 
 # 23. END;
+
+# 24. /
