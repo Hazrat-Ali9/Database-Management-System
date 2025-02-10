@@ -56,3 +56,5 @@
 # 18.  select *from lesson ORDER By id DESC, name ASC;
 
 # 19.  select *from lesson ORDER By name DESC, id ASC;
+
+# 20. SET SERVEROUTPUT ON;
