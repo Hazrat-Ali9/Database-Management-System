@@ -91,5 +91,14 @@
   2  VALUES (7902, 'FORD', 'ANALYST', 7566, TO_DATE('03-DEC-81', 'DD-MON-YY'), 3000, 10);
 
 # 27. SELECT * FROM employees;
+  
+    EMPNO ENAME      JOB               MGR HIREDATE         SAL     DEPTNO
+---------- ---------- ---------- ---------- --------- ---------- ----------
+      7369 SMITH      CLERK            7902 17-DEC-80        800         20
+      7499 ALLEN      SALESMAN         7698 20-FEB-81       1600         30
+      7521 WARD       SALESMAN         7698 22-FEB-81       1250         30
+      7698 BLAKE      MANAGER               01-MAY-81       3850         30
+      7902 FORD       ANALYST          7566 03-DEC-81       3000         10
+
 
 
