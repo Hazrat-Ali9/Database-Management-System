@@ -100,5 +100,5 @@
       7698 BLAKE      MANAGER               01-MAY-81       3850         30
       7902 FORD       ANALYST          7566 03-DEC-81       3000         10
 
-
+# 28. DECLARE
 
