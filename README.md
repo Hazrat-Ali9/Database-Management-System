@@ -66,3 +66,14 @@
 # 23. END;
 
 # 24. /
+
+# 25.  CREATE TABLE employees (
+  2      EMPNO     NUMBER(4) PRIMARY KEY,
+  3      ENAME     VARCHAR2(10),
+  4      JOB       VARCHAR2(10),
+  5      MGR       NUMBER(4),
+  6      HIREDATE  DATE,
+  7      SAL       NUMBER(7, 2),
+  8      DEPTNO    NUMBER(2)
+  9  );
+
