@@ -67,15 +67,16 @@
 
 # 24. /
 
-# 25.  CREATE TABLE employees (
-  2      EMPNO     NUMBER(4) PRIMARY KEY,
-  3      ENAME     VARCHAR2(10),
-  4      JOB       VARCHAR2(10),
-  5      MGR       NUMBER(4),
-  6      HIREDATE  DATE,
-  7      SAL       NUMBER(7, 2),
-  8      DEPTNO    NUMBER(2)
-  9  );
+# 25.  
+    CREATE TABLE employees (
+    2      EMPNO     NUMBER(4) PRIMARY KEY,
+    3      ENAME     VARCHAR2(10),
+    4      JOB       VARCHAR2(10),
+    5      MGR       NUMBER(4),
+    6      HIREDATE  DATE,
+    7      SAL       NUMBER(7, 2),
+    8      DEPTNO    NUMBER(2)
+    9  );
 
 # 26. 
     INSERT INTO employees(EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, DEPTNO)2  VALUES (7369, 'SMITH', 'CLERK', 7902, TO_DATE('17-DEC-80', 'DD-MON-YY'), 800, 20);
