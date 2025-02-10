@@ -112,4 +112,4 @@
 
 # 33. else
 
-# 34. 
+# 34. DBMS_OUTPUT.PUT_line('he is poor);
