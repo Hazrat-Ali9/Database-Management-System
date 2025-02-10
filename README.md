@@ -143,6 +143,17 @@
   9  END;
  10  /
 
- 
+ # 40.  DECLARE
+  2  COUNTER NUMBER:=1;
+  3  BEGIN
+  4  WHILE COUNTER<=5 LOOP
+  5  DBMS_OUTPUT.PUT_LINE('NUMBER:'||COUNTER);
+  6  COUNTER:=COUNTER+1;
+  7  END LOOP;
+  8  END;
+  9  /
+
+
+
 
 
