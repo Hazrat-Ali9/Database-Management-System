@@ -120,17 +120,18 @@
 
     37. /
 
-# 38.  DECLARE
-  2  EMP_NO VARCHAR2(100);
-  3  EMP_SAL EMPLOYEES.SAL%TYPE:=20000;
-  4  BEGIN
-  5  IF EMP_SAL>20000 THEN
-  6  DBMS_OUTPUT.PUT_line('he is Rich');
-  7  ELSE
-  8  DBMS_OUTPUT.PUT_line('he is POOR');
-  9  END IF;
- 10  END;
- 11  /
+# 38.
+    DECLARE
+    2  EMP_NO VARCHAR2(100);
+    3  EMP_SAL EMPLOYEES.SAL%TYPE:=20000;
+    4  BEGIN
+    5  IF EMP_SAL>20000 THEN
+    6  DBMS_OUTPUT.PUT_line('he is Rich');
+    7  ELSE
+    8  DBMS_OUTPUT.PUT_line('he is POOR');
+    9  END IF;
+    10  END;
+    11  /
 
  # 39. DECLARE
   2  CURSOR EMP_CURSOR IS
