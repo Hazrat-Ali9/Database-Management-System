@@ -108,7 +108,7 @@
 
 # 31. IF EMP_SAL>20000 THEN
 
-# 32.
+# 32. DBMS_OUTPUT.PUT_line('he is Rich);
 
 # 33.
 
