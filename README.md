@@ -110,6 +110,6 @@
 
 # 32. DBMS_OUTPUT.PUT_line('he is Rich);
 
-# 33.
+# 33. else
 
 # 34. 
