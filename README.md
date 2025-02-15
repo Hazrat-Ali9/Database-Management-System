@@ -181,6 +181,7 @@
      SELECT ENAME, SAL
      INTO V_EMP_NAME,V_SALARY
      FROM EMPLOYEES
+     WHERE EMPNO=V_EMP_ID;
       
     
 
