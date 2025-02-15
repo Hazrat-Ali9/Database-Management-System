@@ -184,6 +184,7 @@
      WHERE EMPNO=V_EMP_ID;
      DBMS_OUTPUT.PUT_LINE('EMP NAME:' || V_EMP_NAME || 'SALARY:'|| V_SALARY);
      END;
+     /
       
     
 
