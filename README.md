@@ -179,6 +179,7 @@
      V_SALARY EMPLOYEES.SAL%TYPE;
      BEGIN
      SELECT ENAME, SAL
+     INTO V_EMP_NAME,V_SALARY
       
     
 
