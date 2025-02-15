@@ -180,6 +180,7 @@
      BEGIN
      SELECT ENAME, SAL
      INTO V_EMP_NAME,V_SALARY
+     FROM EMPLOYEES
       
     
 
