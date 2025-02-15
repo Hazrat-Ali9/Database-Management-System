@@ -157,6 +157,9 @@
     9  /
 
 
+ # 41. 
+    select * from employees
+    
 
 
 
