@@ -174,6 +174,8 @@
 
 # 43 
      DECLARE
+     V_EMP_ID EMPLOYEES.EMPNO%TYPE:=7499;
+
     
 
 
