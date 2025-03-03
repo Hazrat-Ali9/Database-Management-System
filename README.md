@@ -199,7 +199,14 @@
     create table department( 
     department_id number(2) primary key, 
     department_name varchar2(20)); 
-    
 
+# 45     
+    
+     insert into department table: 
+    insert all  
+    into department values (1,'Sales') 
+    into department values (2,'Maerketing') 
+    into department values (3,'Engineering') 
+    select 1 from dual; 
 
 
