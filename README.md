@@ -254,7 +254,7 @@
 
 # 48  ================= SET 01 =================== 
      
-1) Retrieve the list of employees who were hired between January 1, 2019, and December 
+    1) Retrieve the list of employees who were hired between January 1, 2019, and December 
      31, 2020, and have a salary greater than 5500.
 
     Ans: 
@@ -287,6 +287,9 @@
     sum(salary) total_sal from employee group by department_id order by 
     total_sal desc fetch first 1 row only) emp, department d where 
     d.department_id=emp.department_id;
+
+
+# 52     
     
 
 
