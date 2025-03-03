@@ -261,6 +261,14 @@
     select * from employee where hire_date between TO_DATE('January 1, 
     2019','MONTH DD, YYYY') and TO_DATE('December 31, 2020','MONTH DD, YYYY') 
     and salary > 5500;
+
+# 49 
+
+    2) Display the average salary for each department, but only for those departments where the 
+     average salary is greater than 6000.   
+    Ans: 
+     select avg(salary) from employee group by department_id having 
+     avg(salary)>6000; 
      
      
 
