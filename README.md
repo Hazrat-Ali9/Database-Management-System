@@ -185,6 +185,12 @@
      DBMS_OUTPUT.PUT_LINE('EMP NAME:' || V_EMP_NAME || 'SALARY:'|| V_SALARY);
      END;
      /
+
+# 43 
+
+     create user: 
+     create user c##HR_USER identified by root; 
+     grant all privileges c##HR_USER; 
       
     
 
