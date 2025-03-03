@@ -191,7 +191,14 @@
      create user: 
      create user c##HR_USER identified by root; 
      grant all privileges c##HR_USER; 
-      
+
+# 44   
+
+    DEPARTMENT TABLE 
+    creating department table: 
+    create table department( 
+    department_id number(2) primary key, 
+    department_name varchar2(20)); 
     
 
 
