@@ -210,3 +210,16 @@
     select 1 from dual; 
 
 
+    EMPLOYEE TABLE 
+    creating employee table: 
+    create table employee( 
+    emp_id number(3) primary key, 
+    first_name varchar2(20), 
+    last_name varchar2(20), 
+    hire_date date, 
+    salary number(6), 
+    department_id number(2), 
+    constraint FK_Employee_department_id 
+    foreign key(department_id) references department(department_id)); 
+
+
