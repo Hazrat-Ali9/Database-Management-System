@@ -300,3 +300,12 @@
     d.department_id=emp.department_id;
 
 
+# 53 
+    3) List employees along with their department names and job titles, ordered by salary in 
+     descending order, showing only those earning more than 6000. 
+    Ans: 
+    select * from employee e, department d where 
+    e.department_id=d.department_id and e.salary>6000 order by e.salary desc; 
+    
+
+
