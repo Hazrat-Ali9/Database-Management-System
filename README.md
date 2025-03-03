@@ -202,7 +202,7 @@
 
 # 45     
     
-     insert into department table: 
+    insert into department table: 
     insert all  
     into department values (1,'Sales') 
     into department values (2,'Maerketing') 
