@@ -235,3 +235,20 @@
     3) 
     select 1 from dual; 
 
+
+# 47 
+
+      JOB TABLE 
+    Creating job table 
+    create table job ( 
+    job_id number(2),  
+    job_title varchar2(20), 
+    constraint PK_Job_Job_id primary key (job_id)); 
+    insert into job table: 
+    insert all 
+    into job values (1,'Manager') 
+    into job values (2,'Sales Representative') 
+    into job values (3,'Marketing Specialist') 
+    into job values (4,'Software Engineer') 
+    select 1 from dual; 
+
