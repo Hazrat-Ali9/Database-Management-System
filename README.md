@@ -276,6 +276,17 @@
     Ans: 
     select * from employee e,department d where salary>6000 and 
     e.department_id=d.department_id order by salary desc; 
+
+# 51 
+
+    ================== SET 02 ================== 
+    1) Find the department with the highest total salary expense and display the total salary of 
+      that department. 
+     Ans: 
+     select d.department_name, emp.total_sal from (select department_id, 
+    sum(salary) total_sal from employee group by department_id order by 
+    total_sal desc fetch first 1 row only) emp, department d where 
+    d.department_id=emp.department_id;
     
 
 
