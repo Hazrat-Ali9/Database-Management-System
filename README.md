@@ -270,5 +270,12 @@
      select avg(salary) from employee group by department_id having 
      avg(salary)>6000; 
      
-     
+# 50 
+    3) List employees along with their department names and job titles, ordered by salary in 
+       descending order, showing only those earning more than 6000. 
+    Ans: 
+    select * from employee e,department d where salary>6000 and 
+    e.department_id=d.department_id order by salary desc; 
+    
+
 
