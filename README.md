@@ -291,5 +291,12 @@
 
 # 52     
     
+    2) Display the average salary for each department, but only for those departments with more 
+    than 2 employees. 
+    Ans: 
+    select d.department_id,d.department_name,emp.avg_sal from( 
+    select department_id,avg(salary) avg_sal from employee group by 
+    department_id having count(department_id)>2) emp, department d where 
+    d.department_id=emp.department_id;
 
 
