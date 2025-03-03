@@ -222,4 +222,16 @@
     constraint FK_Employee_department_id 
     foreign key(department_id) references department(department_id)); 
 
+# 46 
+     
+     insert into employee 
+     insert all 
+     into employee values(101,'John','Doe', TO_DATE('2020-01-15', 'YYYY-MM-DD'), 5000, 1) 
+     into employee values(102,'Jane','Smith', TO_DATE('2019-05-22', 'YYYY-MM-DD'), 6000, 1) 
+     into employee values(103,'Michael','Johnson', TO_DATE('2018-07-30', 'YYYY-MM-DD'), 
+     5500, 2) 
+    into employee values(104,'Emily','Davis', TO_DATE('2021-09-10', 'YYYY-MM-DD'), 6500, 2) 
+    into employee values(105,'Sarah','Wilson', TO_DATE('2017-03-12', 'YYYY-MM-DD'), 7000, 
+    3) 
+    select 1 from dual; 
 
