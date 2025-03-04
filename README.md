@@ -341,6 +341,21 @@
     VALUES (103, 'Finance');
 
 
+# 56 
+
+    Table: Projects 
+    CREATE TABLE Projects ( 
+    Project_ID INT PRIMARY KEY, 
+    Project_Name VARCHAR2(100) 
+    ); 
+    INSERT INTO Projects (Project_ID, Project_Name)  
+    VALUES (201, 'Project A'); 
+    INSERT INTO Projects (Project_ID, Project_Name)  
+    VALUES (202, 'Project B'); 
+    INSERT INTO Projects (Project_ID, Project_Name)  
+    VALUES (203, 'Project C');
+
+
      
 
 
