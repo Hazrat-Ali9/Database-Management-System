@@ -306,6 +306,26 @@
     Ans: 
     select * from employee e, department d where 
     e.department_id=d.department_id and e.salary>6000 order by e.salary desc; 
+
+# 54 
+
+     1. Table Needed: 
+
+    Table: Employees 
+    CREATE TABLE Employees ( 
+    Emp_ID INT PRIMARY KEY, 
+    Name VARCHAR2(100), 
+    Dept_ID INT, 
+    Salary NUMBER, 
+    Hire_Date DATE 
+    ); 
+    INSERT INTO Employees (Emp_ID, Name, Dept_ID, Salary, Hire_Date)  
+    VALUES (101, 'John Doe', 101, 50000, TO_DATE('2023-01-01', 'YYYY-MM-DD')); 
+    INSERT INTO Employees (Emp_ID, Name, Dept_ID, Salary, Hire_Date)  
+    VALUES (102, 'Jane Smith', 102, 60000, TO_DATE('2023-02-01', 'YYYY-MM-DD')); 
+    INSERT INTO Employees (Emp_ID, Name, Dept_ID, Salary, Hire_Date)  
+    VALUES (103, 'Bob Brown', 103, 55000, TO_DATE('2023-03-01', 'YYYY-MM-DD'));
+
     
 
 
