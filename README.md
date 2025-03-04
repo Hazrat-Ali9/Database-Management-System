@@ -326,6 +326,21 @@
     INSERT INTO Employees (Emp_ID, Name, Dept_ID, Salary, Hire_Date)  
     VALUES (103, 'Bob Brown', 103, 55000, TO_DATE('2023-03-01', 'YYYY-MM-DD'));
 
-    
+# 55
+
+     Table: Departments 
+    CREATE TABLE Departments ( 
+    Dept_ID INT PRIMARY KEY, 
+    Dept_Name VARCHAR2(100) 
+    ); 
+    INSERT INTO Departments (Dept_ID, Dept_Name)  
+    VALUES (101, 'HR'); 
+    INSERT INTO Departments (Dept_ID, Dept_Name)  
+    VALUES (102, 'IT'); 
+    INSERT INTO Departments (Dept_ID, Dept_Name)  
+    VALUES (103, 'Finance');
+
+
+     
 
 
