@@ -373,6 +373,23 @@
     INSERT INTO Orders (Order_ID, Customer_ID, Order_Date, Order_Amount, Order_Status)  
     VALUES (303, 103, TO_DATE('2025-02-03', 'YYYY-MM-DD'), 200, 'Delivered');
 
+# 58 
+
+    Table: Customers 
+    CREATE TABLE Customers ( 
+    Customer_ID INT PRIMARY KEY, 
+    Name VARCHAR2(100), 
+    Email VARCHAR2(100), 
+    Phone VARCHAR2(15) 
+    ); 
+    INSERT INTO Customers (Customer_ID, Name, Email, Phone)  
+    VALUES (101, 'John Doe', 'john.doe@email.com', '123-456-7890'); 
+    INSERT INTO Customers (Customer_ID, Name, Email, Phone)  
+    VALUES (102, 'Jane Smith', 'jane.smith@email.com', '987-654-3210'); 
+    INSERT INTO Customers (Customer_ID, Name, Email, Phone)  
+    VALUES (103, 'Bob Brown', 'bob.brown@email.com', '555-666-7777');
+
+
 
 
      
