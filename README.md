@@ -355,6 +355,25 @@
     INSERT INTO Projects (Project_ID, Project_Name)  
     VALUES (203, 'Project C');
 
+# 57  
+
+     Table: Orders 
+     CREATE TABLE Orders ( 
+     Order_ID INT PRIMARY KEY, 
+     Customer_ID INT, 
+     Order_Date DATE, 
+     Order_Amount NUMBER, 
+    Order_Status VARCHAR2(50), 
+    FOREIGN KEY (Customer_ID) REFERENCES Customers(Customer_ID) 
+     ); 
+    INSERT INTO Orders (Order_ID, Customer_ID, Order_Date, Order_Amount, Order_Status)  
+    VALUES (301, 101, TO_DATE('2025-02-01', 'YYYY-MM-DD'), 500, 'Shipped'); 
+    INSERT INTO Orders (Order_ID, Customer_ID, Order_Date, Order_Amount, Order_Status)  
+    VALUES (302, 102, TO_DATE('2025-02-02', 'YYYY-MM-DD'), 1000, 'Pending'); 
+    INSERT INTO Orders (Order_ID, Customer_ID, Order_Date, Order_Amount, Order_Status)  
+    VALUES (303, 103, TO_DATE('2025-02-03', 'YYYY-MM-DD'), 200, 'Delivered');
+
+
 
      
 
