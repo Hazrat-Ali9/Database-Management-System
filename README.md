@@ -389,6 +389,29 @@
     INSERT INTO Customers (Customer_ID, Name, Email, Phone)  
     VALUES (103, 'Bob Brown', 'bob.brown@email.com', '555-666-7777');
 
+# 59 
+
+     Table: TeamMembers 
+     CREATE TABLE TeamMembers ( 
+     Emp_ID INT, 
+     Project_ID INT, 
+     Role VARCHAR2(50), 
+     PRIMARY KEY (Emp_ID, Project_ID), 
+     FOREIGN KEY (Emp_ID) REFERENCES Employees(Emp_ID), 
+     FOREIGN KEY (Project_ID) REFERENCES Projects(Project_ID) 
+    ); 
+     INSERT INTO TeamMembers (Emp_ID, Project_ID, Role)  
+     VALUES (101, 201, 'Manager'); 
+     INSERT INTO TeamMembers (Emp_ID, Project_ID, Role)  
+     VALUES (102, 202, 'Developer'); 
+     INSERT INTO TeamMembers (Emp_ID, Project_ID, Role)  
+     VALUES (103, 203, 'Analyst');
+
+
+
+
+
+
 
 
 
