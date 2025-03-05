@@ -408,6 +408,20 @@
      VALUES (103, 203, 'Analyst');
 
 
+# 60 
+
+     SET SERVEROUTPUT ON; 
+     DECLARE 
+     message VARCHAR2(100); 
+     BEGIN 
+     message := 'Hello, welcome to Oracle PL/SQL!'; 
+    DBMS_OUTPUT.PUT_LINE(message); 
+    END; 
+    /
+
+  
+
+
 
 
 
