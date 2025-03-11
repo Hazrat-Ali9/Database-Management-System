@@ -495,6 +495,29 @@
     END LOOP; 
     END; 
      / 
+
+
+# 67 
+
+      SET SERVEROUTPUT ON; 
+      DECLARE 
+      CURSOR project_cursor IS 
+      SELECT e.Name, p.Project_Name 
+      FROM Employees e 
+      JOIN TeamMembers tm ON e.Emp_ID = tm.Emp_ID 
+      JOIN Projects p ON tm.Project_ID = p.Project_ID; 
+      emp_name Employees.Name%TYPE; 
+      project_name Projects.Project_Name%TYPE; 
+      BEGIN 
+      OPEN project_cursor; 
+      LOOP 
+      FETCH project_cursor INTO emp_name, project_name; 
+      EXIT WHEN project_cursor%NOTFOUND; 
+       DBMS_OUTPUT.PUT_LINE(emp_name || ' is assigned to project: ' || project_name); 
+      END LOOP; 
+      CLOSE project_cursor; 
+    END; 
+    / 
     
 
   
