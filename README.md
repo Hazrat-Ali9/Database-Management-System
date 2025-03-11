@@ -436,6 +436,17 @@
     END; 
     / 
 
+# 62 
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    user_input VARCHAR2(100); 
+    BEGIN -- Input taken as an assignment (SQL*Plus doesn't  support direct user input in a PL/SQL block) 
+    user_input := 'This is a test message'; 
+    DBMS_OUTPUT.PUT_LINE('User Input: ' || user_input); 
+    END; 
+    / 
+
   
 
 
