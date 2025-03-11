@@ -447,7 +447,8 @@
     END; 
     / 
 
-# SET SERVEROUTPUT ON; 
+# 64
+    # SET SERVEROUTPUT ON; 
     DECLARE 
     original_salary NUMBER := 50000; 
     bonus_percentage NUMBER := 10; 
