@@ -477,6 +477,24 @@
     CLOSE emp_cursor; 
     END; 
     / 
+
+# 66 
+
+      SET SERVEROUTPUT ON; 
+      DECLARE 
+      CURSOR salary_cursor IS 
+      SELECT Emp_ID, Salary FROM Employees WHERE Dept_ID = 101; 
+      emp_id Employees.Emp_ID%TYPE; 
+      emp_salary Employees.Salary%TYPE; 
+      BEGIN 
+      FOR emp_record IN salary_cursor LOOP 
+      UPDATE Employees 
+    SET Salary = emp_record.Salary * 1.10 -- 10% increase 
+    WHERE Emp_ID = emp_record.Emp_ID; 
+    DBMS_OUTPUT.PUT_LINE('Updated Salary for Emp_ID: ' || emp_record.Emp_ID); 
+    END LOOP; 
+    END; 
+     / 
     
 
   
