@@ -415,9 +415,26 @@
      message VARCHAR2(100); 
      BEGIN 
      message := 'Hello, welcome to Oracle PL/SQL!'; 
-    DBMS_OUTPUT.PUT_LINE(message); 
+     DBMS_OUTPUT.PUT_LINE(message); 
+     END; 
+     /
+
+# 61    
+   
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    emp_id NUMBER := 101; 
+    emp_name VARCHAR2(50); 
+    BEGIN 
+    SELECT Name INTO emp_name 
+    FROM Employees 
+    WHERE Emp_ID = emp_id; 
+    DBMS_OUTPUT.PUT_LINE('Employee Name: ' || emp_name); 
+    EXCEPTION 
+    WHEN NO_DATA_FOUND THEN 
+    DBMS_OUTPUT.PUT_LINE('Employee not found.'); 
     END; 
-    /
+    / 
 
   
 
