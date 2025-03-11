@@ -519,6 +519,27 @@
     END; 
     / 
     
+# 68 
+
+
+      SET SERVEROUTPUT ON; 
+     CREATE OR REPLACE PROCEDURE FetchEmployeeDetails(emp_id_in IN NUMBER) IS 
+     CURSOR emp_cursor IS 
+     SELECT Emp_ID, Name, Dept_ID FROM Employees WHERE Emp_ID = emp_id_in; 
+    emp_id Employees.Emp_ID%TYPE; 
+     emp_name Employees.Name%TYPE; 
+    dept_id Employees.Dept_ID%TYPE; 
+    BEGIN 
+    OPEN emp_cursor; 
+    FETCH emp_cursor INTO emp_id, emp_name, dept_id; 
+    IF emp_cursor%FOUND THEN 
+    DBMS_OUTPUT.PUT_LINE('Emp_ID: ' || emp_id || ', Name: ' || emp_name || ', Dept_ID: ' || dept_id); 
+    ELSE 
+    DBMS_OUTPUT.PUT_LINE('Employee not found!'); 
+    END IF; 
+    CLOSE emp_cursor; 
+    END; 
+    /
 
   
 
