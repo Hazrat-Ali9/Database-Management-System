@@ -447,6 +447,17 @@
     END; 
     / 
 
+# SET SERVEROUTPUT ON; 
+    DECLARE 
+    original_salary NUMBER := 50000; 
+    bonus_percentage NUMBER := 10; 
+    final_salary NUMBER; 
+    BEGIN 
+    final_salary := original_salary + (original_salary * bonus_percentage / 100); 
+     DBMS_OUTPUT.PUT_LINE('Final Salary After Bonus: ' || final_salary); 
+     END; 
+    /     
+
   
 
 
