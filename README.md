@@ -459,6 +459,26 @@
      END; 
     /     
 
+
+# 65     
+    
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    CURSOR emp_cursor IS 
+    SELECT Name FROM Employees WHERE Dept_ID = 101; 
+    emp_name Employees.Name%TYPE; 
+    BEGIN 
+    OPEN emp_cursor; 
+    LOOP 
+    FETCH emp_cursor INTO emp_name; 
+    EXIT WHEN emp_cursor%NOTFOUND; 
+    DBMS_OUTPUT.PUT_LINE('Employee Name: ' || emp_name); 
+    END LOOP; 
+    CLOSE emp_cursor; 
+    END; 
+    / 
+    
+
   
 
 
