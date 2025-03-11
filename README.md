@@ -575,6 +575,26 @@
     END; 
     / 
 
+
+
+#  71 
+
+     SET SERVEROUTPUT ON;  
+     DECLARE 
+     emp_id NUMBER := 101; -- Duplicate Emp_ID 
+     BEGIN -- Trying to insert a duplicate primary key 
+     INSERT INTO Employees (Emp_ID, Name, Dept_ID, Salary) 
+     VALUES (emp_id, 'John Doe', 101, 50000); 
+    COMMIT; 
+    EXCEPTION 
+    WHEN DUP_VAL_ON_INDEX THEN 
+    DBMS_OUTPUT.PUT_LINE('Error: Duplicate employee ID ' || emp_id); 
+    WHEN OTHERS THEN 
+    DBMS_OUTPUT.PUT_LINE('An unknown error occurred!'); 
+    END; 
+    /
+
+
   
 
 
