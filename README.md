@@ -522,7 +522,7 @@
 # 68 
 
 
-      SET SERVEROUTPUT ON; 
+     SET SERVEROUTPUT ON; 
      CREATE OR REPLACE PROCEDURE FetchEmployeeDetails(emp_id_in IN NUMBER) IS 
      CURSOR emp_cursor IS 
      SELECT Emp_ID, Name, Dept_ID FROM Employees WHERE Emp_ID = emp_id_in; 
