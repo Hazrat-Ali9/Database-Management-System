@@ -558,6 +558,23 @@
       END; 
       / 
 
+# 70
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    emp_id NUMBER := 999; -- Assume this ID doesn't exist 
+    emp_name VARCHAR2(50); 
+    BEGIN 
+    SELECT Name INTO emp_name FROM Employees WHERE Emp_ID = emp_id; 
+    DBMS_OUTPUT.PUT_LINE('Employee Name: ' || emp_name); 
+    EXCEPTION 
+    WHEN NO_DATA_FOUND THEN 
+    DBMS_OUTPUT.PUT_LINE('Employee not found with ID: ' || emp_id); 
+    WHEN OTHERS THEN 
+    DBMS_OUTPUT.PUT_LINE('An unknown error occurred!'); 
+    END; 
+    / 
+
   
 
 
