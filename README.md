@@ -640,9 +640,9 @@
     bonus NUMBER; 
     BEGIN 
     SELECT Salary INTO emp_salary FROM Employees WHERE Emp_ID = emp_id; 
-bonus := emp_salary * 0.10; -- 10% bonus 
-RETURN bonus; 
-END; 
+    bonus := emp_salary * 0.10; -- 10% bonus 
+    RETURN bonus; 
+    END; 
 / -- To test the function 
 DECLARE 
 emp_bonus NUMBER; 
