@@ -652,6 +652,19 @@
     END; 
     /     
 
+# 75 
+
+     SET SERVEROUTPUT ON; 
+     CREATE OR REPLACE FUNCTION CalculateBonus(emp_id IN NUMBER) RETURN NUMBER IS 
+     emp_salary Employees.Salary%TYPE; 
+     bonus NUMBER; 
+     BEGIN 
+     SELECT Salary INTO emp_salary FROM Employees WHERE Emp_ID = emp_id; 
+     bonus := emp_salary * 0.10; -- 10% bonus 
+     RETURN bonus; 
+     END; 
+     /
+
 
 
 
