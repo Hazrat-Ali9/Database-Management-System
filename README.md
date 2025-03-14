@@ -666,6 +666,16 @@
      /
 
 
+     -- To test the function 
+     DECLARE 
+     emp_bonus NUMBER; 
+     BEGIN 
+     emp_bonus := CalculateBonus(101); 
+     DBMS_OUTPUT.PUT_LINE('Bonus for Emp_ID 101: ' || emp_bonus); 
+     END; 
+     /
+
+
 
 
   
