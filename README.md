@@ -676,6 +676,22 @@
      /
 
 
+# 76 
+
+     SET SERVEROUTPUT ON; 
+    CREATE OR REPLACE PROCEDURE UpdateSalary(emp_id IN NUMBER, salary_increase IN NUMBER) IS 
+    emp_salary Employees.Salary%TYPE; 
+    BEGIN 
+    SELECT Salary INTO emp_salary FROM Employees WHERE Emp_ID = emp_id; 
+    UPDATE Employees 
+    SET Salary = emp_salary + (emp_salary * salary_increase / 100) 
+    WHERE Emp_ID = emp_id; 
+    DBMS_OUTPUT.PUT_LINE('Salary updated for Emp_ID: ' || emp_id); 
+    END; 
+    / -- To test the procedure 
+    EXEC UpdateSalary(101, 10); -- 10% increase
+
+
 
 
   
