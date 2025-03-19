@@ -703,10 +703,10 @@
      WHEN OTHERS THEN 
      DBMS_OUTPUT.PUT_LINE('Error occurred: ' || SQLERRM); 
      ROLLBACK; 
-END; 
-/ 
--- To test the procedure 
-EXEC DeleteEmployee(101); -- Deletes the employee with Emp_ID 101
+    END; 
+    / 
+     -- To test the procedure 
+     EXEC DeleteEmployee(101); -- Deletes the employee with Emp_ID 101
    
 
 
