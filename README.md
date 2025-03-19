@@ -692,6 +692,33 @@
     EXEC UpdateSalary(101, 10); -- 10% increase
 
 
+# 77 
+
+     # 77 
+ 
+    SET SERVEROUTPUT ON; 
+     CREATE OR REPLACE PROCEDURE DeleteEmployee(emp_id IN NUMBER) IS 
+     BEGIN 
+     DELETE FROM Employees WHERE Emp_ID = emp_id; 
+     COMMIT; 
+     DBMS_OUTPUT.PUT_LINE('Employee with Emp_ID ' || emp_id || ' has been deleted.'); 
+     EXCEPTION 
+     WHEN OTHERS THEN 
+     DBMS_OUTPUT.PUT_LINE('Error occurred: ' || SQLERRM); 
+     ROLLBACK; 
+END; 
+/ 
+-- To test the procedure 
+EXEC DeleteEmployee(101); -- Deletes the employee with Emp_ID 101
+   
+
+
+
+
+
+
+
+
 
 
   
