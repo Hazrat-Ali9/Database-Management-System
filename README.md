@@ -693,7 +693,7 @@
 
 
 # 77 
-    SET SERVEROUTPUT ON; 
+     SET SERVEROUTPUT ON; 
      CREATE OR REPLACE PROCEDURE DeleteEmployee(emp_id IN NUMBER) IS 
      BEGIN 
      DELETE FROM Employees WHERE Emp_ID = emp_id; 
