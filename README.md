@@ -707,6 +707,14 @@
     / 
      -- To test the procedure 
      EXEC DeleteEmployee(101); -- Deletes the employee with Emp_ID 101
+
+# 78  Write a simple PL/SQL anonymous block that displays Welcome to PL/SQL" using 
+
+    DBMS_OUTPUT.PUT_LINE. 
+    SET SERVEROUTPUT ON; 
+    BEGIN 
+    DBMS_OUTPUT.PUT_LINE('Welcome to PL/SQL'); 
+    END;     
    
 
 
