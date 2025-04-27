@@ -725,7 +725,19 @@
     BEGIN 
     DBMS_OUTPUT.PUT_LINE('Employee ID: ' || v_employee_id); 
     DBMS_OUTPUT.PUT_LINE('Salary: ' || v_salary); 
-    END;      
+    END;     
+
+# 80 Write a PL/SQL block to declare two variables employee_id and salary, assign values to them, and display them using DBMS_OUTPUT.PUT_LINE. 
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    v_employee_id employees.employee_id%TYPE := 101; 
+    v_salary employees.salary%TYPE := 5000; 
+    BEGIN 
+    DBMS_OUTPUT.PUT_LINE('Employee ID: ' || v_employee_id); 
+    DBMS_OUTPUT.PUT_LINE('Salary: ' || v_salary); 
+    END; 
+
    
 
 
