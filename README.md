@@ -738,6 +738,21 @@
     DBMS_OUTPUT.PUT_LINE('Salary: ' || v_salary); 
     END; 
 
+# 81  IF-ELSE Statement 
+# Task: Write a PL/SQL block that checks if an employee's salary is greater than 5000 and prints a message 
+# accordingly. 
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    v_salary employees.salary%TYPE := 6000; 
+    BEGIN 
+    IF v_salary > 5000 THEN 
+    DBMS_OUTPUT.PUT_LINE('Salary is greater than 5000'); 
+    ELSE 
+    DBMS_OUTPUT.PUT_LINE('Salary is 5000 or less'); 
+    END IF; 
+    END;    
+
    
 
 
