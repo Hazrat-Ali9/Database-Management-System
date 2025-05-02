@@ -753,7 +753,19 @@
     END IF; 
     END;    
 
-   
+# 82  FOR Loop
+
+# Task: Write a PL/SQL block that prints the first 5 employee IDs from the employees table using a FOR loop. 
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    CURSOR emp_cursor IS 
+    SELECT employee_id FROM employees; 
+    v_employee_id employees.employee_id%TYPE; 
+    BEGIN 
+    FOR emp IN emp_cursor LOOP 
+    DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp.employee_id); 
+    END LOOP; 
+    END;
 
 
 
