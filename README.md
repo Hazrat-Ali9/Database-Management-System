@@ -768,6 +768,20 @@
     END;
 
 
+# 83 WHILE Loop 
+# Task: Write a PL/SQL block that prints the first 5 numbers (1 to 5) using a WHILE loop. 
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    v_counter NUMBER := 1; 
+    BEGIN 
+    WHILE v_counter <= 5 LOOP 
+    DBMS_OUTPUT.PUT_LINE('Number: ' || v_counter); 
+    v_counter := v_counter + 1; 
+    END LOOP; 
+    END;    
+
+
 
 
 
