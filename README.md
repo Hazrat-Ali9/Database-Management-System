@@ -781,6 +781,22 @@
     END LOOP; 
     END;    
 
+# 84 : Implicit Cursor 
+# Task: Write a PL/SQL block that retrieves the name and salary of an employee with a specific employee_id using an implicit cursor. 
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    v_employee_id employees.employee_id%TYPE := 101; 
+    v_first_name employees.first_name%TYPE; 
+    v_salary employees.salary%TYPE; 
+    BEGIN 
+    SELECT first_name, salary 
+    INTO v_first_name, v_salary 
+    FROM employees 
+    WHERE employee_id = v_employee_id; 
+    DBMS_OUTPUT.PUT_LINE('Employee: ' || v_first_name || ', Salary: ' || v_salary); 
+    END;    
+
 
 
 
