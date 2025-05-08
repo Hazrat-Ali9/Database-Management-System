@@ -797,6 +797,25 @@
     DBMS_OUTPUT.PUT_LINE('Employee: ' || v_first_name || ', Salary: ' || v_salary); 
     END;    
 
+# 85 :  Explicit Cursor 
+# Task: Write a PL/SQL block that uses an explicit cursor to fetch and print employee names and salaries. 
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    CURSOR emp_cursor IS 
+    SELECT first_name, salary FROM employees; 
+    v_first_name employees.first_name%TYPE; 
+    v_salary employees.salary%TYPE; 
+    BEGIN 
+    OPEN emp_cursor; 
+    LOOP 
+    FETCH emp_cursor INTO v_first_name, v_salary; 
+    EXIT WHEN emp_cursor%NOTFOUND; 
+    DBMS_OUTPUT.PUT_LINE('Employee: ' || v_first_name || ', Salary: ' || v_salary); 
+    END LOOP; 
+    CLOSE emp_cursor; 
+    END; 
+
 
 
 
