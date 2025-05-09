@@ -816,7 +816,22 @@
     CLOSE emp_cursor; 
     END; 
 
+# 86 : Exception Handling 
+# Task: Write a PL/SQL block that performs division and handles the ZERO_DIVIDE exception. 
 
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    v_num1 NUMBER := 10; 
+    v_num2 NUMBER := 0; 
+    v_result NUMBER; 
+    BEGIN 
+    v_result := v_num1 / v_num2; 
+    EXCEPTION 
+    WHEN ZERO_DIVIDE THEN 
+    DBMS_OUTPUT.PUT_LINE('Error: Division by zero!'); 
+    WHEN OTHERS THEN 
+    DBMS_OUTPUT.PUT_LINE('An unknown error occurred: ' || SQLERRM); 
+    END;
 
 
 
