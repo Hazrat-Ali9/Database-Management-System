@@ -833,6 +833,20 @@
     DBMS_OUTPUT.PUT_LINE('An unknown error occurred: ' || SQLERRM); 
     END;
 
+# 87 : Create a Procedure to Update Salary 
+# Task: Write a procedure to update an employee's salary based on the employee_id and a percentage increase.
+
+    SET SERVEROUTPUT ON; 
+    CREATE OR REPLACE PROCEDURE update_salary(p_emp_id IN NUMBER, p_percentage IN NUMBER) IS 
+    v_current_salary employees.salary%TYPE; 
+    BEGIN -- Retrieve the current salary of the employee 
+    SELECT salary INTO v_current_salary FROM employees WHERE employee_id = p_emp_id; -- Update the salary 
+    UPDATE employees  
+    SET salary = v_current_salary + (v_current_salary * p_percentage / 100) 
+    WHERE employee_id = p_emp_id; 
+    COMMIT; -- Commit the transaction 
+    DBMS_OUTPUT.PUT_LINE('Salary updated for employee ID: ' || p_emp_id); 
+    END; 
 
 
 
