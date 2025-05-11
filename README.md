@@ -848,6 +848,21 @@
     DBMS_OUTPUT.PUT_LINE('Salary updated for employee ID: ' || p_emp_id); 
     END; 
 
+# 88 : Function to Get Department Name 
+# Task: Write a function that takes an employee's employee_id and returns the department name.
+
+    SET SERVEROUTPUT ON; 
+    CREATE OR REPLACE FUNCTION get_department_name(p_emp_id IN NUMBER) 
+    RETURN VARCHAR2 IS 
+    v_dept_name departments.department_name%TYPE; 
+    BEGIN 
+    SELECT department_name INTO v_dept_name  
+    FROM departments d 
+    JOIN employees e ON e.department_id = d.department_id 
+    WHERE e.employee_id = p_emp_id; 
+    RETURN v_dept_name; 
+    END; 
+
 
 
 
