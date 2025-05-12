@@ -863,6 +863,19 @@
     RETURN v_dept_name; 
     END; 
 
+# 89 Trigger to Set Default Department 
+# Task: Write a trigger that automatically sets the department_id to 10 whenever a new employee is inserted. 
+
+    SET SERVEROUTPUT ON; 
+    CREATE OR REPLACE TRIGGER set_default_dept_id 
+    BEFORE INSERT ON employees 
+    FOR EACH ROW 
+    BEGIN 
+    IF :new.department_id IS NULL THEN 
+    :new.department_id := 10; 
+    END IF; 
+    END;    
+
 
 
 
