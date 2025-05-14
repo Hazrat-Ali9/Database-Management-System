@@ -876,6 +876,25 @@
     END IF; 
     END;    
 
+# 90 Using Nested Tables 
+# Task: Write a PL/SQL block that uses a nested table to store employee IDs and loops through them to display employee names.
+
+    SET SERVEROUTPUT ON; 
+    DECLARE 
+    TYPE emp_id_table IS TABLE OF employees.employee_id%TYPE; 
+    emp_ids emp_id_table := emp_id_table(101, 102, 103); 
+    v_first_name employees.first_name%TYPE; 
+    v_last_name employees.last_name%TYPE; 
+    BEGIN 
+    FOR i IN 1..emp_ids.COUNT LOOP 
+    SELECT first_name, last_name 
+    INTO v_first_name, v_last_name 
+    FROM employees 
+    WHERE employee_id = emp_ids(i); 
+    DBMS_OUTPUT.PUT_LINE('Employee: ' || v_first_name || ' ' || v_last_name); 
+    END LOOP; 
+    END;    
+
 
 
 
