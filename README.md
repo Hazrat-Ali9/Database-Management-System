@@ -893,8 +893,27 @@
     WHERE employee_id = emp_ids(i); 
     DBMS_OUTPUT.PUT_LINE('Employee: ' || v_first_name || ' ' || v_last_name); 
     END LOOP; 
-    END;    
+    END;  
 
+# PostgreSQL Syntax or Structure
+
+In PostgreSQL, data is stored in **databases** which contain **tables**. Each table holds rows (records) and columns (attributes).
+
+Example: Creating a simple table to store student data
+
+```sql
+CREATE TABLE students (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
+  age INT
+);
+```
+
+- `students` is the table name.
+- `id`, `name`, and `age` are columns.
+- `SERIAL` auto-generates a unique ID for each student.
+- `VARCHAR(100)` allows storing text up to 100 characters.
+- `INT` is used for integer numbers.
 
 
 
